@@ -20,7 +20,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 [Vet Clinic Database] <a name="about-project"></a>
 
 **[Vet_Clinic]** is a vet database that stores animal information such as name, weight, date of birth, escape attempts, and neutered status, allowing the vet to keep track of medical and behavioral history and provide personalized care recommendations.
 
