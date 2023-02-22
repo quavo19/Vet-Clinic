@@ -38,6 +38,13 @@ BEGIN;
 COMMIT;
 SELECT * FROM animals;
 
+-- set weight to negatives for given ids, as said by the reviewer
+BEGIN;
+    UPDATE animals
+    set weight_kg = weight_kg * (-1)
+    WHERE id = 5 or id = 6 or id = 7 or id = 8;
+COMMIT;
+
 BEGIN;
     DELETE FROM animals;
     SELECT * FROM animals;
@@ -63,7 +70,7 @@ SELECT COUNT(*) FROM animals;
 
 -- animals that have never tried to escape
 SELECT COUNT(*) FROM animals
-    WHERE escape_attempts > 0;
+    WHERE escape_attempts = 0;
 
 -- average weight of animals
 SELECT AVG(weight_kg) FROM animals;
