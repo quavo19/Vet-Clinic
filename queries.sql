@@ -110,7 +110,7 @@ group by species.name;
 SELECT * FROM owners 
 JOIN animals ON owners.id = animals.owner_id
 JOIN species ON species.id = animals.species_id
-WHERE owners.full_name = 'Jennifer Orwell';
+WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
 
 -- List all animals owned by Dean Winchester that haven't tried to escape.
 SELECT * FROM owners 
